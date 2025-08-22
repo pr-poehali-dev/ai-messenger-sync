@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +64,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				messenger: {
+					blue: '#2563EB',
+					dark: '#1F2937',
+					light: '#F8FAFC',
+					gray: '#FFFAFC'
 				}
 			},
 			borderRadius: {
@@ -75,6 +84,12 @@ export default {
 					},
 					to: {
 						height: 'var(--radix-accordion-content-height)'
+					},
+					messenger: {
+						blue: '#2563EB',
+						dark: '#1F2937',
+						light: '#F8FAFC',
+						gray: '#FFFAFC'
 					}
 				},
 				'accordion-up': {
@@ -88,7 +103,9 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.8s ease-out'
 			}
 		}
 	},
